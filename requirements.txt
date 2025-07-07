@@ -1,0 +1,43 @@
+1. Software Requirements (Pre-installed Tools)
+
+! Ensure the following tools are installed and accessible on the Jenkins server or agent node:
+
+* Java Development Kit (JDK 17) – required for Jenkins and Java-based project components.
+
+* Node.js (version 16) – required for building and testing frontend or Node-based applications.
+
+* Docker Engine – for containerizing and pushing Docker images.
+
+* SonarQube Scanner – to perform static code analysis and enforce quality gates.
+
+* Trivy – a security scanner for detecting vulnerabilities in source code and container images.
+
+* OWASP Dependency-Check – used to identify known CVEs in project dependencies.
+
+2. Required Jenkins Plugins
+
+! Install and configure the following Jenkins plugins from the Plugin Manager:
+
+* Github
+
+* Docker Pipeline
+
+* SonarQube Scanner for Jenkins
+
+* OWASP Dependency-Check Plugin (or configure as a shell script)
+
+* npm install
+
+3. Credentials and Integrations
+
+! Set up the following credentials securely in Jenkins (via Manage Jenkins > Credentials):
+
+* GitHub Access Token – to pull source code from private or public repositories.
+
+* Docker Registry Credentials – username and access token for pushing images.
+
+* SonarQube Server URL and Token – for uploading scan results.
+
+* Cloud or Deployment Keys – if deploying to platforms like AWS, Kubernetes, or EC2.
+
+
