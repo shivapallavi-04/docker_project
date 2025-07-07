@@ -1,3 +1,4 @@
+#Docker file for the react code
 FROM node:16-slim AS builder
 WORKDIR /app
 COPY package*.json ./
